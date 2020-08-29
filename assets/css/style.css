@@ -1,0 +1,44 @@
+:root {
+    --main-color:#ea5252;/*#ea5252, #f55, tomato, hsl(0,78,61), rgb(234,82,82)*/
+}
+
+html{
+    direction: rtl;
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+a, a:hover, .btn-link{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover, a.active, .active, a:active, a:focus{
+    color: var(--main-color);
+}
+P {
+    margin-bottom: 0;
+}
+.main-bg{
+    background: var(--main-color);
+}
+.main-color{
+    color: var(--main-color);
+}
+
+/*---HEADER-----*/
+.page-header{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../images/head-bg.jpg');
+    background-size: cover;
+}
+.page-top-header{
+    background: rgba(0, 0, 0, 0.5);
+}
+.sign-header-btn{
+    border-radius: 10px;
+}
+.sign-header-btn + span{
+    font-family: 'TajawalLight', sans-serif;
+}
+.signup-header-btn{
+}
+/*---HEADER-----*/
