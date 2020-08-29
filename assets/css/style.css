@@ -36,11 +36,13 @@ P {
 }
 .sign-header-btn{
     border-radius: 10px;
+    font-size: 1rem;
 }
 .sign-header-btn + span{
     font-family: 'TajawalLight', sans-serif;
 }
 .signup-header-btn{
+    font-size: 1rem;
 }
 .navbar-nav{
     font-family: 'TajawalBold', sans-serif;
@@ -70,7 +72,7 @@ P {
 .page-header-text {
     font-family: 'TajawalBold', sans-serif;
     font-size: 2.3rem;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 .breadcrumb {
     padding: .75rem 0rem;
