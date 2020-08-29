@@ -1,5 +1,6 @@
 :root {
     --main-color:#ea5252;/*#ea5252, #f55, tomato, hsl(0,78,61), rgb(234,82,82)*/
+    --sub-color:#ed6868;/*#ed6868, #f77, salmon, hsl(0,78,66), rgb(237,104,104)*/
 }
 
 html{
@@ -40,5 +41,49 @@ P {
     font-family: 'TajawalLight', sans-serif;
 }
 .signup-header-btn{
+}
+.navbar-nav{
+    font-family: 'TajawalBold', sans-serif;
+}
+.navbar-expand-sm .navbar-nav .nav-link {
+    margin-left: .7rem;
+    margin-right: .7rem;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+}
+.navbar-nav .nav-item:first-child .nav-link {
+    margin-right: 0rem;
+}
+.navbar-nav .nav-item:last-child .nav-link {
+    margin-left: 0rem;
+}
+.navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:active, .navbar-nav .nav-item .nav-link:focus{
+    color: var(--main-color);
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+.page-header-title{
+    font-family: 'TajawalBold', sans-serif;
+    font-size: 1.6rem;
+}
+.page-header-text {
+    font-family: 'TajawalBold', sans-serif;
+    font-size: 2.3rem;
+    line-height: 1.5;
+}
+.breadcrumb {
+    padding: .75rem 0rem;
+    background: none;
+    font-family: 'TajawalBold', sans-serif;
+}
+.breadcrumb-item a{
+    color: var(--sub-color);
+}
+.breadcrumb-item a:hover{
+    color: var(--main-color);
+}
+.breadcrumb-item.active, .breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
 }
 /*---HEADER-----*/
