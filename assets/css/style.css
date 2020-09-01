@@ -8,6 +8,7 @@ html{
 }
 body{
     font-family: 'Tajawal', sans-serif;
+    line-height: 1.7;
 }
 a, a:hover, .btn-link{
     color: inherit;
@@ -141,3 +142,35 @@ P {
     border: 1px solid var(--main-color);
 }
 /*---FOOTER-----*/
+
+/*---PAGE-----*/
+.page{
+    padding: 5rem;
+}
+.page-title{
+    font-family: 'TajawalBold', sans-serif;
+    font-size: 2.3rem;
+    line-height: 1.3;
+}
+.page-sub-title{
+    font-size: 0.9rem;
+}
+.font-text-bold{
+    font-family: 'TajawalBold', sans-serif;
+}
+.page-list {
+    padding-right: 1.2rem;
+    list-style: none;
+}
+.page-list li::before {
+    content: "";
+    background-color: var(--main-color);
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    padding: 0.28rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-right: -1rem;
+}
+/*---PAGE-----*/
