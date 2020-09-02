@@ -1,6 +1,8 @@
 :root {
     --main-color:#ea5252;/*#ea5252, #f55, tomato, hsl(0,78,61), rgb(234,82,82)*/
     --sub-color:#ed6868;/*#ed6868, #f77, salmon, hsl(0,78,66), rgb(237,104,104)*/
+    --dark-gray-color:#6a6a6a;/*#6a6a6a, #777, dimgray, hsl(0,0,41), rgb(106,106,106)*/
+    --light-gray-color:#edf1f3;/*#edf1f3, #fff, whitesmoke, hsl(200,19,94), rgb(237,241,243)*/
 }
 
 html{
@@ -23,8 +25,14 @@ P {
 .main-bg{
     background: var(--main-color);
 }
+.light-gray-bg{
+    background: var(--light-gray-color);
+}
 .main-color{
     color: var(--main-color);
+}
+.dark-gray-color{
+    color: var(--dark-gray-color);
 }
 
 /*---HEADER-----*/
@@ -172,5 +180,26 @@ P {
     border-radius: 50%;
     margin-left: 0.5rem;
     margin-right: -1rem;
+}
+.page-second-title{
+    font-family: 'TajawalBold', sans-serif;
+    font-size: 1.3rem;
+}
+.page-form-btn{
+    color: #ffffff;
+    font-family: 'TajawalBold', sans-serif;
+    font-size: 1.3rem;
+    padding: 1rem 5rem;
+    border-radius: 7px;
+}
+.page-form input {
+    height: calc(3.25rem + 2px);
+}
+.page-form .form-control{
+    background: var(--light-gray-color);
+    padding-right: 1.5rem;
+    font-family: 'TajawalMedium', sans-serif;
+    border-radius: 7px;
+    color: var(--dark-gray-color);
 }
 /*---PAGE-----*/
