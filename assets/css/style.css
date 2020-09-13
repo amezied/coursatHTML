@@ -156,24 +156,45 @@ P {
 /*---FOOTER-----*/
 
 /*-----home-----*/
+.course-item, .owl-item{
+    position: relative;
+    z-index: 1;
+}
 .course-box{
     border: 1px solid rgb(235, 235, 235);
     background-color: #fff;
     box-shadow: 0px 3px 6px 0px rgba(35, 31, 32, 0.07);
     padding: 0;
     overflow: hidden;
+    height: 440px;
+    position: relative;
+    color: #000;
+    z-index: 1;
 }
 .course-box .card-img-overlay{
     padding: 0;
+    height: 100%;
 }
 .course-box .card-top{
-    height: 40%;
+    height: 48%;
+    position: absolute;
+    width: 100%;
 }
 .course-box .card-body{
     background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-.course-box .card-tooltip{
+.course-item .card-tooltip{
     display: none;
+    background: #fff;
+    color: #000;
+    position: absolute;
+    top: 20%;
+    left: -250px;
+    width: 250px;
+    z-index: 2000;
 }
 .card-title{
     font-size: 1rem;
@@ -188,6 +209,11 @@ P {
 .card-icon-text{
     font-size: 0.8rem;
     font-family: 'TajawalBold', sans-serif;
+}
+.owl-carousel .owl-stage-outer {
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
 }
 .card-btn{
     margin-top: 1.2rem;
@@ -230,6 +256,52 @@ P {
 .price-box p small{
     display: block;
     font-size: 0.6rem;
+}
+.course-item:hover .course-box{
+    color: #fff;
+}
+.course-item:hover .course-box .card-img-overlay{
+    background: rgba(0,0,0,0.5);
+}
+.course-item:hover .course-box .card-img{
+    transform: scale(1.5);
+}
+.course-item:hover .course-box .card-body{
+    background: none;
+}
+.course-item:hover .course-box .card-sub-title, .course-item:hover .course-box .main-color{
+    color: #fff;
+}
+.course-item:hover .course-box .card-btn{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.course-item:hover .course-box .card-btn:hover{
+    color: #000;
+    background: #fff;
+}
+.course-item:hover .card-tooltip{
+    display: block;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+.testimonial-content {
+    display: none;
+}
+.swiper-slide-active .testimonial-content {
+    display: block;
+    position: relative;
+    width: 40vw;
+    margin-right: -14vw;
 }
 /*-----home-----*/
 
