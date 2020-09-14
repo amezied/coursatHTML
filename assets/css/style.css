@@ -22,6 +22,9 @@ a:hover, a.active, .active, a:active, a:focus{
 P {
     margin-bottom: 0;
 }
+h4{
+    font-size: 1.4rem;
+}
 .main-bg{
     background: var(--main-color);
 }
@@ -122,7 +125,8 @@ P {
     font-family: 'TajawalMedium', sans-serif;
     height: 100%;
     border-radius: 0;
-    border: 0;
+    border: none;
+    padding: 1.3rem 1rem;
 }
 .subscribe-form input::placeholder{
     color: #000;
@@ -130,9 +134,11 @@ P {
 .subscribe-form button{
     font-family: 'TajawalBold', sans-serif;
     border-radius: 0;
+    padding: 1.3rem 1rem;
 }
 .footer-title{
     font-family: 'TajawalBold', sans-serif;
+    margin-top: 2.2rem;
 }
 .footer-text, .footer-more-info{
     font-size: 0.92rem;
