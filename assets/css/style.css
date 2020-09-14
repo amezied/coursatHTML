@@ -274,18 +274,6 @@ h6{
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
 }
-.view-all-btn{
-    border: 2px solid var(--main-color);
-    border-radius: 20px;
-    font-family: 'TajawalBold', sans-serif;
-    padding: 1rem;
-}
-.pull-circle{
-    border: 1px solid #000;
-    border-radius: 50%;
-    padding: 1rem 0.45rem;
-    font-size: 0.8rem;
-}
 .prop-section{
     background-image: url('../images/prop-bg.jpg');
     background-position: top;
@@ -505,6 +493,47 @@ h6{
 /*.course-item:hover .card-tooltip{
     display: block;
 }*/
+.view-all-btn{
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    font-family: 'TajawalBold', sans-serif;
+    padding: 1rem;
+}
+.pull-circle{
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 1rem 0.45rem;
+    font-size: 0.8rem;
+}
+.customNavigation-bottom{
+    font-family: 'TajawalBold', sans-serif;
+}
+.w-35{
+    width: 35%!important;
+}
+.item_tooltip {
+    display: none;
+    position: absolute;
+    width: 25%;
+    z-index: 1000;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px 0px rgba(35, 31, 32, 0.07);
+}
+@media (max-width: 500px) {
+    .view-all-btn{
+        padding: 1rem;
+        width: 100%;
+    }
+    .customNavigation{
+        width: 100%;
+    }
+    .pull-circle{
+        padding: 0.8rem 0.25rem;
+        font-size: 0.8rem;
+    }
+}
 .vote-box{
     font-size: 0.9rem;
     font-family: 'TajawalBold', sans-serif;
