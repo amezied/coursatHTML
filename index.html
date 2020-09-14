@@ -356,9 +356,11 @@
                         </div>
                     </div>
                     <div class="customNavigation">
-                        <span class="pager-left"><a class="btn btn-link prev" data-slide="prev"><i class="fas fa-angle-right"></i></a></span>
-                        <span class="pager-right"><a class="btn btn-link next" data-slide="next"><i class="fas fa-angle-left "></i></a></span>
+                        <span class="pager-left"><a class="btn btn-link prev">السابق</a></span>
+                        <span class="pager-right"><a class="btn btn-link next">التالي</i></a></span>
                     </div>
+                    <div class="w-25  main-bg pt-1"></div>
+                    <div class="w-100 border-top pt-1"></div>
                 </div>
     </div>
 </div>
@@ -816,23 +818,21 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('.carousel').carousel();
-        $('.pager-left .prev').click(function() {
-            $('.carousel').carousel('prev');
-        });
 
-        $('.pager-right .next').click(function() {
-            $('.carousel').carousel('next');
-        });
         $('#owl-demo-2').owlCarousel({
             rtl:true,
             loop:true,
             margin:30,
-            nav:true,
+            nav:false,
+            dots:false,
             responsive:{
                 0:{
                     items:1
                 },
-                600:{
+                400:{
+                    items:2
+                },
+                700:{
                     items:3
                 },
                 1000:{
@@ -840,6 +840,12 @@
                 }
             }
         });
+        $('.pager-right .next').click(function() {
+            $('#owl-demo-2').owlCarousel().trigger('next.owl.carousel');
+        })
+        $('.pager-left .prev').click(function() {
+            $('#owl-demo-2').owlCarousel().trigger('prev.owl.carousel');
+        })
 
         var swiper = new Swiper('#swiper-testimonial', {
             effect: 'coverflow',

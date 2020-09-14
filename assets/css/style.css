@@ -502,9 +502,9 @@ h6{
     color: #000;
     background: #fff;
 }
-.course-item:hover .card-tooltip{
+/*.course-item:hover .card-tooltip{
     display: block;
-}
+}*/
 .vote-box{
     font-size: 0.9rem;
     font-family: 'TajawalBold', sans-serif;
