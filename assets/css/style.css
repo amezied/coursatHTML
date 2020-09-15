@@ -3,6 +3,7 @@
     --sub-color:#ed6868;/*#ed6868, #f77, salmon, hsl(0,78,66), rgb(237,104,104)*/
     --dark-gray-color:#6a6a6a;/*#6a6a6a, #777, dimgray, hsl(0,0,41), rgb(106,106,106)*/
     --light-gray-color:#edf1f3;/*#edf1f3, #fff, whitesmoke, hsl(200,19,94), rgb(237,241,243)*/
+    --gray-color:#8f8d8d;
 }
 
 html{
@@ -57,9 +58,20 @@ h6{
     width: 100%;
     display: block;
 }
+@media (max-width: 575px){
+    .page-top-header{
+        position: relative;
+        background: rgba(0, 0, 0, 1);
+    }
+}
 .carousel-caption {
     top: 35%;
     bottom: initial;
+}
+@media (max-width: 575px){
+    .carousel-caption {
+        top: 5%;
+    }
 }
 .page-header-btn{
     border: 2px solid rgb(255, 255, 255);
@@ -88,6 +100,11 @@ h6{
     height: 650px;
     width: 100%;
     object-fit: cover;
+}
+@media (max-width: 575px){
+    .carousel-item img{
+        height: 380px;
+    }
 }
 .sign-header-btn{
     border-radius: 10px;
@@ -170,25 +187,50 @@ h6{
     padding: 0.5rem;
     color: #fff;
 }
+.page-bottom-header{
+    background-image:none;
+}
+.page-bottom-header.inner-page-bottom-header{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../images/head-bg.jpg');
+    background-size: cover;
+    padding-top: 15%;
+    height: 450px;
+}
+@media (max-width: 991px) {
+    .page-bottom-header.inner-page-bottom-header{
+        padding-top: 18%;
+        height: auto;
+    }
+}
+@media (max-width: 767px) {
+    .page-bottom-header.inner-page-bottom-header{
+        padding-top: 27%;
+    }
+}
+@media (max-width: 575px) {
+    .page-bottom-header.inner-page-bottom-header{
+        padding-top: 5%;
+    }
+}
 .page-header-title{
     font-family: 'TajawalBold', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 .page-header-main-title{
     font-family: 'TajawalBold', sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .page-header-text {
     font-family: 'TajawalBold', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     line-height: 1.3;
 }
 @media (max-width: 767px) {
     .page-header-main-title{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .page-header-text {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 .breadcrumb {
@@ -695,11 +737,12 @@ h6{
 
 /*---PAGE-----*/
 .page{
-    padding: 5rem;
+    /*padding: 5rem;*/
 }
+
 .page-title{
     font-family: 'TajawalBold', sans-serif;
-    font-size: 2.3rem;
+    font-size: 2rem;
     line-height: 1.3;
 }
 .page-sub-title{
@@ -734,14 +777,46 @@ h6{
     padding: 1rem 5rem;
     border-radius: 7px;
 }
-.page-form input {
+.page-form input, .page-form select, .page-form .btn{
     height: calc(3.25rem + 2px);
 }
 .page-form .form-control{
     background: var(--light-gray-color);
     padding-right: 1.5rem;
+    padding-left: 1.5rem;
     font-family: 'TajawalMedium', sans-serif;
     border-radius: 7px;
     color: var(--dark-gray-color);
 }
+.page-form .input-group input{
+    border-left: 0;
+}
+.page-form .input-group-text {
+    background: var(--light-gray-color);
+    color: var(--dark-gray-color);
+    border-right: 0;
+}
+.page-link {
+    line-height: 1;
+    color: var(--gray-color);
+    border: none;
+    border-radius: 50%;
+    background: none;
+}
+.page-item.active .page-link {
+    background-color: var(--main-color);
+    border: none;
+    font-family: 'TajawalMedium', sans-serif;
+}
+.page-item:first-child .page-link,
+ .page-item:last-child .page-link{
+     border-radius: 50%;
+ }
+.page-nav-item .page-link{
+    background: #fff;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.16);
+    color: var(--main-color);
+    padding: .75rem .8rem;
+}
+
 /*---PAGE-----*/
