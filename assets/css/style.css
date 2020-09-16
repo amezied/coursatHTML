@@ -4,6 +4,7 @@
     --dark-gray-color:#6a6a6a;/*#6a6a6a, #777, dimgray, hsl(0,0,41), rgb(106,106,106)*/
     --light-gray-color:#edf1f3;/*#edf1f3, #fff, whitesmoke, hsl(200,19,94), rgb(237,241,243)*/
     --gray-color:#8f8d8d;
+    --light-black-color:#282828;
 }
 
 html{
@@ -44,6 +45,9 @@ h6{
 }
 .dark-gray-color{
     color: var(--dark-gray-color);
+}
+.gray-color{
+    color: var(--gray-color);
 }
 
 /*---HEADER-----*/
@@ -197,23 +201,18 @@ h6{
 .page-bottom-header.inner-page-bottom-header{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../images/head-bg.jpg');
     background-size: cover;
-    padding-top: 15%;
+    padding-top: 155px;
     height: 450px;
 }
 @media (max-width: 991px) {
     .page-bottom-header.inner-page-bottom-header{
-        padding-top: 18%;
+        padding-top: 165px;
         height: auto;
-    }
-}
-@media (max-width: 767px) {
-    .page-bottom-header.inner-page-bottom-header{
-        padding-top: 27%;
     }
 }
 @media (max-width: 575px) {
     .page-bottom-header.inner-page-bottom-header{
-        padding-top: 5%;
+        padding-top: 0;
     }
 }
 .page-header-title{
@@ -294,8 +293,11 @@ h6{
 .page-footer dd {
     margin-bottom: 1rem;
 }
-.footer-social-icon{
-    border: 1px solid #fff;
+.social-box{
+    color: var(--gray-color);
+}
+.social-icon{
+    border: 1px solid var(--light-gray-color);
     border-radius: 50%;
     font-size: 1.2rem;
     width: 2.2rem;
@@ -303,9 +305,19 @@ h6{
     margin: 0.3rem;
     text-align: center;
     padding-top: 0.1rem;
+    color: var(--gray-color);
 }
-.footer-social-icon:hover{
+.social-icon:hover{
     border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+.footer-social .social-icon{
+    border-color: #fff;
+    color: #fff;
+}
+.footer-social .social-icon:hover{
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
 }
 /*---FOOTER-----*/
 
@@ -779,6 +791,37 @@ h6{
 .font-text-medium{
     font-family: 'TajawalMedium', sans-serif;
 }
+.title-btn{
+    background: var(--main-color);
+    border-radius: 7px;
+    border: 2px solid transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+.title-border-btn{
+    background: #fff;
+    border-radius: 7px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-size: 1rem;
+}
+.title-btn:hover{
+    background: #fff;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+.title-border-btn:hover{
+    background: var(--main-color);
+    border: 2px solid transparent;
+    color: #fff;
+}
+.page-title-info{
+    font-family: 'TajawalBold', sans-serif;
+}
+.price-span{
+    font-size: 1.5rem;
+    font-family: 'TajawalBold', sans-serif;
+}
 .page-list {
     padding-right: 1.2rem;
     list-style: none;
@@ -850,5 +893,73 @@ h6{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 21px 0px rgba(43, 43, 43, 0.08),inset 0px 1px 2px 0px rgba(181, 180, 180, 0.35);
     padding: 2rem;
+}
+.aside-box{
+    border: 1px solid rgb(197, 202, 207);
+    border-radius: 5px;
+    background-color: rgb(248, 248, 248);
+}
+.chat-part-icon{
+    background: var(--main-color);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.course-content-img{
+
+}
+.page-tab .nav-tabs .nav-link {
+    border: 1px solid rgb(225, 225, 225);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-family: 'TajawalBold', sans-serif;
+    margin-right: 8px;
+    padding: 1rem 1.5rem;
+}
+.page-tab .nav-tabs .nav-item:first-child  .nav-link{
+    margin-right: 0px;
+}
+.page-tab .nav-tabs .nav-item.show .nav-link, .page-tab .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.page-tab .tab-content{
+    color: #000;
+    border: 1px solid rgb(226, 226, 226);
+    border-top: none;
+}
+.page-tab .tab-content .active {
+    color: #000;
+}
+.page-accord{
+
+}
+.page-accord .card {
+    margin-bottom: 2rem;
+    border: 1px solid rgb(206, 215, 223);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 8px 0px rgba(48, 61, 71, 0.07);
+}
+.page-accord .card-header {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: 'TajawalBold', sans-serif;
+    font-size: 1.5rem;
+}
+.accordion.page-accord .card:not(:first-of-type):not(:last-of-type),
+.accordion.page-accord .card:first-of-type{
+    border-bottom:  1px solid rgb(206, 215, 223);
+    border-radius: 3px;
+}
+.accordion.page-accord .accord-title:hover,
+.accordion.page-accord .accord-title:focus{
+    color: inherit;
+    text-decoration: none;
+}
+
+.accordion.page-accord .accord-title[aria-expanded=true] .accord-icon{
+    transform: scaleX(-1);
 }
 /*---PAGE-----*/
