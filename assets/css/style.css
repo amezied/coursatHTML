@@ -791,6 +791,9 @@ h6{
 .font-text-medium{
     font-family: 'TajawalMedium', sans-serif;
 }
+.font-text-underline{
+    text-decoration: underline;
+}
 .title-btn{
     background: var(--main-color);
     border-radius: 7px;
@@ -847,8 +850,30 @@ h6{
     font-size: 1.3rem;
     padding: 1rem 5rem;
     border-radius: 7px;
+    background: var(--main-color);
+    border: 2px solid transparent;
 }
-.page-form input, .page-form select, .page-form .btn{
+.btn-main{
+    color: #ffffff;
+    font-family: 'TajawalBold', sans-serif;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    background: var(--main-color);
+    border: 2px solid transparent;
+}
+.page-form-btn:hover, .btn-main:hover{
+    color: var(--main-color);
+    background: #ffffff;
+    border: 2px solid var(--main-color);
+}
+@media (max-width: 500px) {
+    .page-form-btn{
+        font-size: 1rem;
+        padding: 1rem 3rem;
+    }
+}
+.page-form input:not([type="radio"]):not([type="checkbox"]), .page-form select, .page-form .btn{
     height: calc(3.25rem + 2px);
 }
 .page-form .form-control{
@@ -867,6 +892,14 @@ h6{
     color: var(--dark-gray-color);
     border-right: 0;
 }
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+}
+.custom-control-label::before {
+    border-color: var(--main-color);
+}
+
 .page-link {
     line-height: 1;
     color: var(--gray-color);
@@ -961,5 +994,46 @@ h6{
 
 .accordion.page-accord .accord-title[aria-expanded=true] .accord-icon{
     transform: scaleX(-1);
+}
+.modal-title{
+    font-family: 'TajawalBold', sans-serif;
+    font-size: 1.6rem;
+}
+.modal-header, .modal-footer {
+    border: none;
+    border-radius: 0;
+}
+.modal-body{
+    border: 1px solid var(--light-gray-color);
+    overflow-y: scroll;
+    border-radius: 8px 0px 8px 8px;
+    max-height: 50vh;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) var(--light-gray-color);
+}
+.modal-body::-webkit-scrollbar-track {
+    background: var(--light-gray-color);
+}
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color) ;
+    border-radius: 6px;
+    border: 3px solid var(--light-gray-color);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--gray-color);
+    border-radius: 8px 0 0 8px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color) ;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--sub-color);
 }
 /*---PAGE-----*/
