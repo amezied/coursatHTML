@@ -1008,7 +1008,7 @@ h6{
     border-radius: 8px 0px 8px 8px;
     max-height: 50vh;
 }
-.modal-body{
+.modal-body.modal-body-scroll{
     overflow-y: scroll;
 }
 /* width */
@@ -1027,5 +1027,36 @@ h6{
 /* Handle on hover */
 .modal-body-scroll::-webkit-scrollbar-thumb:hover {
     background: var(--sub-color);
+}
+.social-login-box{
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    min-height: 20px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    transition: 5s padding-right ease, 5s padding-left ease;
+}
+.social-login-box span{
+    color: #fff;
+}
+.social-login-box i{
+font-size: 1.5rem;
+    color: #fff;
+}
+.social-login-box:hover span{
+padding-right: 1rem;
+}
+.social-login-box:hover i{
+    padding-left: 0.5rem;
+}
+.facebook-bg{
+    background: #1971c8;
+}
+.twitter-bg{
+    background: #03a9f4;
+}
+.gmail-bg{
+    background: #de2c1e;
 }
 /*---PAGE-----*/
